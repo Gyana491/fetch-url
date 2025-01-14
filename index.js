@@ -6,7 +6,7 @@ const NodeCache = require('node-cache');
 const cache = new NodeCache({ stdTTL: 86400 });
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3033;
 
 app.get('/fetch-url', async (req, res) => {
   const { url } = req.query;
